@@ -1,33 +1,105 @@
-.App {
+
+.container-drag{
   text-align: center;
-}
+  font-family: 'helvetica';
+  font-size: 150%;
+  font-weight: bolder;
+  color: white !important; 
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.wip{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: static;
+  width: 100%;
+  max-height: 100px;
+  min-height: 100px;
+  
+  justify-content: space-around;
+  
+  margin-top: 0px;
+  
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.header {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: crimson;
+  font-size: 100% !important;
+  width: 100%;
+  height: 40px;
+
+
+  text-justify: auto;
+  
+
+}
+.task-header {
+  display: inline-block;
+  background-color: rgba(255, 147, 121, 0.822);
+  width: 100%;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.droppable{
+  position: relative;
+  display: inline;
+  
+  background-color: white;
+  width: 100%;
+  height: 150%;
+  min-height: 900px;
+  margin-top: auto;
+  padding-bottom:  500px;
+  
+  
+}
+
+.draggable-in-menu {
+  display: inline-block;
+  margin: 5px auto !important;
+  min-width : 100px;
+  min-height: 100px;
+  background-color: crimson;
+  
+  margin: 5px auto;
+  line-height: 5em;
+  resize: both;
+  overflow: hidden; 
+  transition-duration:  2s;
+  
+}
+.draggable-in-menu:hover {
+  
+  transform: scale(1.5,1.5);
+  border-radius: 15px;
+  box-shadow: 5px 30px 30px 0px rgba(219, 88, 88, 0.822) !important;
+
+  
+}
+.draggable-in-custom {
+  display: inline-block;
+  margin: 5px auto !important;
+  min-width : 100px;
+  min-height: 100px;
+  background-color: crimson;
+  
+  margin: 5px auto;
+  line-height: 5em;
+  resize: both;
+  overflow: hidden; 
+  
+  
+}
+.draggable-in-custom:hover {
+  
+  
+  
+  box-shadow: 5px 30px 30px 0px rgba(219, 88, 88, 0.822) !important;
+
+  
 }
